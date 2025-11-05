@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@keyframes fade-up-5ac701b4 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-5ac701b4 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+div.field[data-v-5ac701b4] {
+  display: flex;
+  flex-direction: column;
+}
+div.field > div[data-v-5ac701b4] {
+  margin: 0 0 8px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: var(--input-max-width);
+}
+div.field > div .placeholder[data-v-5ac701b4] {
+  font: var(--font-body-1);
+  color: var(--gray-80);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  background-color: transparent;
+  transition: all 0.4s;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 70px);
+}
+div.field > div input[data-v-5ac701b4] {
+  width: 100%;
+  padding: 9px 20px;
+  height: 54px;
+  font: var(--font-body-1);
+  color: var(--dark-500);
+  background: var(--white-500);
+  border: 1px solid var(--gray-20);
+  border-radius: 10px;
+  outline: none;
+  color-scheme: var(--сolor-scheme);
+}
+div.field > div input[data-v-5ac701b4]::placeholder {
+  color: transparent;
+}
+div.field > div input[data-v-5ac701b4]:focus, div.field > div input[data-v-5ac701b4]:hover, div.field > div input[data-v-5ac701b4]:not(:placeholder-shown) {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  border-color: var(--primary-500);
+}
+div.field > div input:focus:not(:placeholder-shown) + .placeholder[data-v-5ac701b4], div.field > div input:focus:focus + .placeholder[data-v-5ac701b4], div.field > div input:hover:not(:placeholder-shown) + .placeholder[data-v-5ac701b4], div.field > div input:hover:focus + .placeholder[data-v-5ac701b4], div.field > div input:not(:placeholder-shown):not(:placeholder-shown) + .placeholder[data-v-5ac701b4], div.field > div input:not(:placeholder-shown):focus + .placeholder[data-v-5ac701b4] {
+  color: var(--primary-80);
+}
+div.field > div input:focus:not(:placeholder-shown) + .placeholder + svg[data-v-5ac701b4]:not(.icon-info), div.field > div input:focus:focus + .placeholder + svg[data-v-5ac701b4]:not(.icon-info), div.field > div input:hover:not(:placeholder-shown) + .placeholder + svg[data-v-5ac701b4]:not(.icon-info), div.field > div input:hover:focus + .placeholder + svg[data-v-5ac701b4]:not(.icon-info), div.field > div input:not(:placeholder-shown):not(:placeholder-shown) + .placeholder + svg[data-v-5ac701b4]:not(.icon-info), div.field > div input:not(:placeholder-shown):focus + .placeholder + svg[data-v-5ac701b4]:not(.icon-info) {
+  fill: var(--primary-80);
+  stroke: var(--tertiary-80);
+}
+div.field > div input[data-v-5ac701b4]:disabled {
+  background-color: var(--light-10);
+  color: var(--dark-20);
+  border-color: var(--light-20);
+}
+div.field > div input:disabled:not(:placeholder-shown) + .placeholder[data-v-5ac701b4] {
+  color: var(--dark-20);
+}
+div.field > div input:disabled + .placeholder[data-v-5ac701b4] {
+  color: var(--dark-20);
+}
+div.field > div input:disabled + .placeholder + svg[data-v-5ac701b4]:not(.icon-info) {
+  fill: var(--dark-20);
+  stroke: var(--dark-80);
+}
+div.field > div input:disabled ~ .actions-block[data-v-5ac701b4] {
+  display: none;
+}
+div.field > div input.without-placeholder[data-v-5ac701b4] {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.field > div input:not(:placeholder-shown) + .placeholder[data-v-5ac701b4], div.field > div input:focus + .placeholder[data-v-5ac701b4] {
+  font: var(--font-label);
+  top: 8px;
+  transform: none;
+  background: transparent;
+}
+div.field > div input ~ .actions-block .clean[data-v-5ac701b4] {
+  opacity: 0;
+}
+div.field > div input:not(:placeholder-shown) ~ .actions-block .clean[data-v-5ac701b4] {
+  opacity: 1;
+}
+div.field > div input[data-v-5ac701b4]:-webkit-autofill, div.field > div input[data-v-5ac701b4]:-webkit-autofill:hover, div.field > div input[data-v-5ac701b4]:-webkit-autofill:focus, div.field > div input[data-v-5ac701b4]:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+div.field > div input[data-v-5ac701b4]::-webkit-outer-spin-button, div.field > div input[data-v-5ac701b4]::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+div.field > div input.clearable[data-v-5ac701b4] {
+  padding-right: 40px;
+}
+div.field > div input.clearable.info[data-v-5ac701b4] {
+  padding-right: 80px;
+}
+div.field > div input.info[data-v-5ac701b4] {
+  padding-right: 40px;
+}
+div.field > div input.info.clearable[data-v-5ac701b4] {
+  padding-right: 80px;
+}
+div.field > div .actions-block[data-v-5ac701b4] {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 8px;
+  height: 100%;
+}
+div.field > div .actions-block svg[data-v-5ac701b4] {
+  margin: 0 8px;
+}
+div.field > div svg.icon-info[data-v-5ac701b4] {
+  fill: var(--primary-80);
+  stroke: var(--tertiary-500);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+div.field > div svg.icon-info[data-v-5ac701b4]:hover {
+  fill: var(--primary-500);
+  stroke: var(--tertiary-500);
+}
+div.field > div svg[data-v-5ac701b4]:not(.icon-info) {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: var(--dark-500);
+  stroke: var(--dark-80);
+}
+div.field.with-icon > div input[data-v-5ac701b4] {
+  padding-left: 52px;
+}
+div.field.with-icon > div .placeholder[data-v-5ac701b4] {
+  left: 53px;
+}
+div.field > .error[data-v-5ac701b4] {
+  font: var(--font-label);
+  color: var(--secondary-500) !important;
+  display: flex;
+  min-height: 11px;
+}
+div.field.with-error > div input[data-v-5ac701b4] {
+  border-color: var(--secondary-500) !important;
+}
+div.field.with-error > div input:not(:placeholder-shown) + .placeholder[data-v-5ac701b4],
+div.field.with-error > div input:focus + .placeholder[data-v-5ac701b4] {
+  color: var(--secondary-500) !important;
+}
+div.field.with-error > div input:not(:placeholder-shown) + .placeholder + svg[data-v-5ac701b4],
+div.field.with-error > div input:focus + .placeholder + svg[data-v-5ac701b4] {
+  fill: var(--secondary-500) !important;
+  stroke: var(--secondary-80) !important;
+}
+div.field.light > div input[data-v-5ac701b4] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 38px;
+}
+div.field.light > div svg[data-v-5ac701b4] {
+  height: 18px;
+  wigth: 18px;
+}
+div.field.light > div input:not(:placeholder-shown) + .placeholder[data-v-5ac701b4],
+div.field.light > div input:focus + .placeholder[data-v-5ac701b4] {
+  display: none;
+}
+div.field.with-placeholder > div input:not(:placeholder-shown) + .placeholder[data-v-5ac701b4],
+div.field.with-placeholder > div input:focus + .placeholder[data-v-5ac701b4] {
+  display: flex;
+  top: -6px;
+  background: var(--white-500);
+}
+div.field.small > div input[data-v-5ac701b4] {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 24px;
+}
+div.field.small > div svg[data-v-5ac701b4] {
+  height: 24px;
+}
+div.field.small > div input:not(:placeholder-shown) + .placeholder[data-v-5ac701b4],
+div.field.small > div input:focus + .placeholder[data-v-5ac701b4] {
+  display: none;
+}
+div.field.noerror > div[data-v-5ac701b4] {
+  margin: 0;
+}
+div.field.noerror > .error[data-v-5ac701b4] {
+  display: none;
+}
+div.field.inside input[data-v-5ac701b4] {
+  border: none;
+  background-color: var(--light-20);
+}
+div.field.rtl[data-v-5ac701b4],
+.direction-rtl div.field[data-v-5ac701b4]:not(.ltr) {
+  direction: rtl;
+}
+div.field.rtl > div .placeholder[data-v-5ac701b4],
+.direction-rtl div.field:not(.ltr) > div .placeholder[data-v-5ac701b4] {
+  left: auto;
+  right: 20px;
+}
+div.field.rtl > div input.clearable[data-v-5ac701b4],
+.direction-rtl div.field:not(.ltr) > div input.clearable[data-v-5ac701b4] {
+  padding-right: 20px;
+  padding-left: 40px;
+}
+div.field.rtl > div input.clearable.info[data-v-5ac701b4],
+.direction-rtl div.field:not(.ltr) > div input.clearable.info[data-v-5ac701b4] {
+  padding-right: 20px;
+  padding-left: 80px;
+}
+div.field.rtl > div input.info[data-v-5ac701b4],
+.direction-rtl div.field:not(.ltr) > div input.info[data-v-5ac701b4] {
+  padding-right: 20px;
+  padding-left: 40px;
+}
+div.field.rtl > div input.info.clearable[data-v-5ac701b4],
+.direction-rtl div.field:not(.ltr) > div input.info.clearable[data-v-5ac701b4] {
+  padding-right: 20px;
+  padding-left: 80px;
+}
+div.field.rtl > div .actions-block[data-v-5ac701b4],
+.direction-rtl div.field:not(.ltr) > div .actions-block[data-v-5ac701b4] {
+  right: auto;
+  left: 8px;
+}
+div.field.rtl > div svg[data-v-5ac701b4]:not(.icon-info),
+.direction-rtl div.field:not(.ltr) > div svg[data-v-5ac701b4]:not(.icon-info) {
+  left: auto;
+  right: 16px;
+}
+div.field.rtl.with-icon > div input[data-v-5ac701b4],
+.direction-rtl div.field:not(.ltr).with-icon > div input[data-v-5ac701b4] {
+  padding-right: 52px;
+}
+div.field.rtl.with-icon > div input[data-v-5ac701b4]:not(.clearable):not(.info),
+.direction-rtl div.field:not(.ltr).with-icon > div input[data-v-5ac701b4]:not(.clearable):not(.info) {
+  padding-left: 20px;
+}
+div.field.rtl.with-icon > div .placeholder[data-v-5ac701b4],
+.direction-rtl div.field:not(.ltr).with-icon > div .placeholder[data-v-5ac701b4] {
+  left: auto;
+  right: 53px;
+}

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@keyframes fade-up-c41197db {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-c41197db {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.code-inputs[data-v-c41197db] {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.code-inputs input[data-v-c41197db] {
+  width: 100%;
+  padding: 9px 20px;
+  height: 54px;
+  font: var(--font-body-1);
+  color: var(--dark-500);
+  background: var(--white-500);
+  border: 1px solid var(--gray-20);
+  border-radius: 10px;
+  outline: none;
+  color-scheme: var(--сolor-scheme);
+  font: var(--font-h5);
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+}
+.code-inputs input[data-v-c41197db]::placeholder {
+  color: transparent;
+}
+.code-inputs input[data-v-c41197db]:focus, .code-inputs input[data-v-c41197db]:hover, .code-inputs input[data-v-c41197db]:not(:placeholder-shown) {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  border-color: var(--primary-500);
+}
+.code-inputs input:focus:not(:placeholder-shown) + .placeholder[data-v-c41197db], .code-inputs input:focus:focus + .placeholder[data-v-c41197db], .code-inputs input:hover:not(:placeholder-shown) + .placeholder[data-v-c41197db], .code-inputs input:hover:focus + .placeholder[data-v-c41197db], .code-inputs input:not(:placeholder-shown):not(:placeholder-shown) + .placeholder[data-v-c41197db], .code-inputs input:not(:placeholder-shown):focus + .placeholder[data-v-c41197db] {
+  color: var(--primary-80);
+}
+.code-inputs input:focus:not(:placeholder-shown) + .placeholder + svg[data-v-c41197db]:not(.icon-info), .code-inputs input:focus:focus + .placeholder + svg[data-v-c41197db]:not(.icon-info), .code-inputs input:hover:not(:placeholder-shown) + .placeholder + svg[data-v-c41197db]:not(.icon-info), .code-inputs input:hover:focus + .placeholder + svg[data-v-c41197db]:not(.icon-info), .code-inputs input:not(:placeholder-shown):not(:placeholder-shown) + .placeholder + svg[data-v-c41197db]:not(.icon-info), .code-inputs input:not(:placeholder-shown):focus + .placeholder + svg[data-v-c41197db]:not(.icon-info) {
+  fill: var(--primary-80);
+  stroke: var(--tertiary-80);
+}
+.code-inputs input[data-v-c41197db]:disabled {
+  background-color: var(--light-10);
+  color: var(--dark-20);
+  border-color: var(--light-20);
+}
+.code-inputs input:disabled:not(:placeholder-shown) + .placeholder[data-v-c41197db] {
+  color: var(--dark-20);
+}
+.code-inputs input:disabled + .placeholder[data-v-c41197db] {
+  color: var(--dark-20);
+}
+.code-inputs input:disabled + .placeholder + svg[data-v-c41197db]:not(.icon-info) {
+  fill: var(--dark-20);
+  stroke: var(--dark-80);
+}
+.code-inputs input:disabled ~ .actions-block[data-v-c41197db] {
+  display: none;
+}
+.code-inputs input.without-placeholder[data-v-c41197db] {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.code-inputs input:not(:placeholder-shown) + .placeholder[data-v-c41197db], .code-inputs input:focus + .placeholder[data-v-c41197db] {
+  font: var(--font-label);
+  top: 8px;
+  transform: none;
+  background: transparent;
+}
+.code-inputs input ~ .actions-block .clean[data-v-c41197db] {
+  opacity: 0;
+}
+.code-inputs input:not(:placeholder-shown) ~ .actions-block .clean[data-v-c41197db] {
+  opacity: 1;
+}
+.code-inputs input[data-v-c41197db]:-webkit-autofill, .code-inputs input[data-v-c41197db]:-webkit-autofill:hover, .code-inputs input[data-v-c41197db]:-webkit-autofill:focus, .code-inputs input[data-v-c41197db]:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+.code-inputs input[data-v-c41197db]::-webkit-outer-spin-button, .code-inputs input[data-v-c41197db]::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.code-inputs input[data-v-c41197db]:focus, .code-inputs input[data-v-c41197db]:hover, .code-inputs input[data-v-c41197db]:not(:placeholder-shown) {
+  padding-top: 0;
+  padding-bottom: 2px;
+}@keyframes fade-up {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.modal-studio-auth {
+  max-width: 420px;
+}@keyframes fade-up-133f6701 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-133f6701 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.description[data-v-133f6701] {
+  padding: 0;
+  text-align: center;
+  font: var(--font-body-2);
+  color: var(--dark-500);
+}
+.size-l[data-v-133f6701] {
+  margin-top: 10px;
+}

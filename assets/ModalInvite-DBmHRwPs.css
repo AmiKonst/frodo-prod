@@ -1,0 +1,60 @@
+@keyframes fade-up-c0e6137b {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-c0e6137b {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.description[data-v-c0e6137b] {
+  text-align: center;
+  font: var(--font-body-1);
+  color: var(--dark-500);
+}
+.box[data-v-c0e6137b] {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.canvas-box[data-v-c0e6137b] {
+  width: 204px;
+  height: 204px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-shrink: 0;
+}
+.canvas-box canvas[data-v-c0e6137b] {
+  width: 204px;
+  height: 204px;
+  border-radius: 10px;
+  border: solid 1px var(--primary-500);
+}
+.buttons[data-v-c0e6137b] {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  height: 204px;
+  gap: 8px;
+  align-items: center;
+  justify-content: end;
+  flex: 1 1 100%;
+}
+.buttons button[data-v-c0e6137b] {
+  width: 100%;
+  flex: 1 1 50%;
+}

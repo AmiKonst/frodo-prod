@@ -1,0 +1,50 @@
+@keyframes fade-up-363f011f {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-363f011f {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+div[data-v-363f011f] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 12px;
+}
+div > video[data-v-363f011f], div > svg[data-v-363f011f] {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+  fill: var(--dark-80);
+  stroke: var(--dark-20);
+}
+div > span[data-v-363f011f] {
+  font: var(--font-body-1);
+  font-weight: bold;
+  color: var(--dark-80);
+  text-align: center;
+}
+div > span.description[data-v-363f011f] {
+  font: var(--font-body-2);
+  color: var(--gray-500);
+  text-align: center;
+  padding: 0 10px;
+}
+div.invert > span[data-v-363f011f] {
+  color: var(--white-80);
+}

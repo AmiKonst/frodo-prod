@@ -1,0 +1,288 @@
+@charset "UTF-8";
+@keyframes fade-up {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.select-field {
+  display: flex;
+  flex-direction: column;
+}
+.select-field > div {
+  margin: 0 0 8px;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+.select-field > div:first-child {
+  max-width: var(--input-max-width);
+}
+.select-field > div .placeholder {
+  font: var(--font-body-1);
+  color: var(--gray-80);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  background-color: transparent;
+  transition: all 0.4s;
+  pointer-events: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 70px);
+}
+.select-field > div .actions-block {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 8px;
+  display: flex;
+  align-items: center;
+}
+.select-field > div .actions-block > svg {
+  fill: var(--dark-80);
+  stroke: var(--dark-80);
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 8px;
+}
+.select-field > div .actions-block > svg.arrow-down {
+  fill: var(--dark-80);
+  transition: all 0.4s;
+}
+.select-field > div > svg:not(.arrow-down) {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: var(--dark-80);
+  stroke: var(--dark-80);
+}
+.select-field > div input {
+  width: 100%;
+  padding: 9px 20px;
+  height: 54px;
+  font: var(--font-body-1);
+  color: var(--dark-500);
+  background: var(--white-500);
+  border: 1px solid var(--gray-20);
+  border-radius: 10px;
+  outline: none;
+  color-scheme: var(--сolor-scheme);
+  padding-right: 44px;
+  pointer-events: none;
+}
+.select-field > div input::placeholder {
+  color: transparent;
+}
+.select-field > div input:focus, .select-field > div input:hover, .select-field > div input:not(:placeholder-shown) {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  border-color: var(--primary-500);
+}
+.select-field > div input:focus:not(:placeholder-shown) + .placeholder, .select-field > div input:focus:focus + .placeholder, .select-field > div input:hover:not(:placeholder-shown) + .placeholder, .select-field > div input:hover:focus + .placeholder, .select-field > div input:not(:placeholder-shown):not(:placeholder-shown) + .placeholder, .select-field > div input:not(:placeholder-shown):focus + .placeholder {
+  color: var(--primary-80);
+}
+.select-field > div input:focus:not(:placeholder-shown) + .placeholder + svg:not(.icon-info), .select-field > div input:focus:focus + .placeholder + svg:not(.icon-info), .select-field > div input:hover:not(:placeholder-shown) + .placeholder + svg:not(.icon-info), .select-field > div input:hover:focus + .placeholder + svg:not(.icon-info), .select-field > div input:not(:placeholder-shown):not(:placeholder-shown) + .placeholder + svg:not(.icon-info), .select-field > div input:not(:placeholder-shown):focus + .placeholder + svg:not(.icon-info) {
+  fill: var(--primary-80);
+  stroke: var(--tertiary-80);
+}
+.select-field > div input:disabled {
+  background-color: var(--light-10);
+  color: var(--dark-20);
+  border-color: var(--light-20);
+}
+.select-field > div input:disabled:not(:placeholder-shown) + .placeholder {
+  color: var(--dark-20);
+}
+.select-field > div input:disabled + .placeholder {
+  color: var(--dark-20);
+}
+.select-field > div input:disabled + .placeholder + svg:not(.icon-info) {
+  fill: var(--dark-20);
+  stroke: var(--dark-80);
+}
+.select-field > div input:disabled ~ .actions-block {
+  display: none;
+}
+.select-field > div input.without-placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.select-field > div input:not(:placeholder-shown) + .placeholder, .select-field > div input:focus + .placeholder {
+  font: var(--font-label);
+  top: 8px;
+  transform: none;
+  background: transparent;
+}
+.select-field > div input ~ .actions-block .clean {
+  opacity: 0;
+}
+.select-field > div input:not(:placeholder-shown) ~ .actions-block .clean {
+  opacity: 1;
+}
+.select-field > div input:-webkit-autofill, .select-field > div input:-webkit-autofill:hover, .select-field > div input:-webkit-autofill:focus, .select-field > div input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+.select-field > div input::-webkit-outer-spin-button, .select-field > div input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.select-field > div input.clearable {
+  padding-right: 80px;
+}
+.select-field > div:hover input:not([disabled]) {
+  border-color: var(--primary-500);
+}
+.select-field.disabled > div {
+  cursor: default;
+}
+.select-field.opened > div .arrow-down {
+  transform: rotate(180deg);
+}
+.select-field.opened > div input {
+  border-color: var(--primary-500);
+}
+.select-field > .error {
+  font: var(--font-label);
+  color: var(--secondary-500) !important;
+  display: flex;
+  min-height: 11px;
+}
+.select-field.with-error > div input {
+  border-color: var(--secondary-500) !important;
+}
+.select-field.with-error > div svg,
+.select-field.with-error > div input:not(:placeholder-shown) + .placeholder + svg,
+.select-field.with-error > div input:focus + .placeholder + svg {
+  fill: var(--secondary-500) !important;
+  stroke: var(--secondary-80) !important;
+}
+.select-field.with-error > div input:not(:placeholder-shown) + .placeholder + svg,
+.select-field.with-error > div svg {
+  color: var(--secondary-500) !important;
+}
+.select-field.with-icon > div input {
+  padding-left: 52px;
+}
+.select-field.with-icon > div .placeholder {
+  left: 53px;
+}
+.select-field.light > div input {
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  height: 38px;
+}
+.select-field.light > div svg {
+  height: 18px;
+  width: 18px;
+}
+.select-field.light > div input:not(:placeholder-shown) + .placeholder,
+.select-field.light > div input:focus + .placeholder {
+  display: none;
+}
+.select-field.with-placeholder > div input:not(:placeholder-shown) + .placeholder,
+.select-field.with-placeholder > div input:focus + .placeholder {
+  display: flex;
+  top: -6px;
+  background: var(--white-500);
+}
+.select-field.noerror > div {
+  margin: 0;
+}
+.select-field.noerror > .error {
+  display: none;
+}
+.select-field.inline > div input {
+  border-color: transparent !important;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  border-radius: 0;
+}
+.select-field.inline > div .actions-block {
+  right: 16px;
+}
+.select-field.inline > div > svg:not(.arrow-down) {
+  fill: var(--dark-80) !important;
+  stroke: var(--dark-80) !important;
+}
+.select-field.icon-only > div {
+  width: 44px;
+  height: 44px;
+}
+.select-field.icon-only > div .placeholder,
+.select-field.icon-only > div input {
+  width: 44px;
+  opacity: 0;
+  padding: 0;
+}
+.select-field.icon-only > div > svg {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.select-field.icon-only > div .actions-block {
+  display: none;
+}
+.direction-rtl .select-field > div .placeholder {
+  padding-right: 0;
+  padding-left: 80px;
+  left: auto;
+  right: 20px;
+}
+.direction-rtl .select-field > div .actions-block {
+  right: auto;
+  left: 8px;
+}
+.direction-rtl .select-field > div > svg:not(.arrow-down) {
+  left: auto;
+  right: 16px;
+}
+.direction-rtl .select-field > div input {
+  padding-right: 20px;
+  padding-left: 44px;
+}
+.direction-rtl .select-field > div input.clearable {
+  padding-left: 80px;
+  padding-right: 20px;
+}
+.direction-rtl .select-field.with-icon > div input {
+  padding-right: 52px;
+}
+.direction-rtl .select-field.with-icon > div input:not(.clearable) {
+  padding-left: 20px;
+}
+.direction-rtl .select-field.with-icon > div .placeholder {
+  left: auto;
+  right: 53px;
+}
+.direction-rtl .select-field.inline > div .actions-block {
+  right: auto;
+  left: 16px;
+}
+.direction-rtl .select-field.icon-only > div > svg {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+}
