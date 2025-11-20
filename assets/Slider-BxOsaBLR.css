@@ -1,0 +1,41 @@
+@keyframes fade-up-3ad1485c {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-3ad1485c {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.slider[data-v-3ad1485c] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.slider[data-v-3ad1485c]::-webkit-scrollbar {
+  display: none;
+}
+.slider-col[data-v-3ad1485c] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider-col .slider-item[data-v-3ad1485c] {
+  width: 100%;
+}
