@@ -1,0 +1,52 @@
+import { _ as _export_sfc, s as stores, u as useI18n, c as createElementBlock, o as openBlock, d as createCommentVNode, x as toDisplayString, h as unref, F as Fragment, m as renderList, b as createBlock, B as Button } from './index-C7GkSE2s.js';
+
+const _hoisted_1 = { class: "title" };
+const _hoisted_2 = {
+  key: 0,
+  class: "title-text"
+};
+
+    
+const _sfc_main = {
+  __name: 'TitleWithButtons',
+  props: {
+        title: { type: [String, null], default: null },
+        items: { type: Array, default: () => [] }
+    },
+  setup(__props) {
+
+    stores.locale();
+    const nav = stores.nav();
+
+    const { t } = useI18n();
+
+    const props = __props;
+
+    const onClick = (item) => {
+        if (item.page) {
+            nav.open(item.page, item.params);
+        }
+    };
+
+return (_ctx, _cache) => {
+  return (openBlock(), createElementBlock("label", _hoisted_1, [
+    (props.title)
+      ? (openBlock(), createElementBlock("span", _hoisted_2, toDisplayString(unref(t)(props.title)), 1))
+      : createCommentVNode("", true),
+    (openBlock(true), createElementBlock(Fragment, null, renderList(props.items, (item, id) => {
+      return (openBlock(), createBlock(Button, {
+        key: item.id,
+        name: unref(t)(item.name),
+        class: "size-s secondary",
+        onClick: $event => (onClick(item))
+      }, null, 8, ["name", "onClick"]))
+    }), 128))
+  ]))
+}
+}
+
+};
+const TitleWithButtons = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-9320959f"]]);
+
+export { TitleWithButtons as T };
+//# sourceMappingURL=TitleWithButtons-BsQXByOV.js.map
