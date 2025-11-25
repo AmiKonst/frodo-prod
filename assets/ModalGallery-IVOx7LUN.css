@@ -1,0 +1,74 @@
+@keyframes fade-up-d878bd11 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-d878bd11 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.gallery-wrapper[data-v-d878bd11] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.gallery-wrapper .slides[data-v-d878bd11] {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.25s ease;
+  min-height: 100vh;
+}
+.gallery-wrapper .slides .slide[data-v-d878bd11] {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.gallery-wrapper .slides .slide .zoom-container[data-v-d878bd11] {
+  touch-action: none;
+  will-change: transform;
+  transition: transform 0.1s ease;
+}
+.gallery-wrapper .slides .slide .zoom-container.loading[data-v-d878bd11] {
+  min-width: 100%;
+  min-height: 100%;
+}
+.gallery-wrapper .slides .slide .zoom-container img[data-v-d878bd11] {
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+}
+.gallery-wrapper .slides .slide .zoom-container .opacity-mode[data-v-d878bd11] {
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 25%;
+  height: auto;
+}
+.fade-enter-from[data-v-d878bd11], .fade-leave-to[data-v-d878bd11] {
+  opacity: 0;
+}
+.fade-enter-to[data-v-d878bd11], .fade-leave-from[data-v-d878bd11] {
+  opacity: 1;
+}
+.fade-enter-active[data-v-d878bd11], .fade-leave-active[data-v-d878bd11] {
+  transition: opacity 0.4s ease;
+}
