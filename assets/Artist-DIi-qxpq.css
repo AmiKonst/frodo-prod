@@ -1,0 +1,42 @@
+@keyframes fade-up-0349aa9a {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-0349aa9a {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.name[data-v-0349aa9a] {
+  font: var(--font-h4);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+}
+.buttons[data-v-0349aa9a] {
+  min-height: 38px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.buttons button[data-v-0349aa9a] {
+  min-width: 132px;
+}
+.empty[data-v-0349aa9a] {
+  margin: auto;
+  min-height: 100px;
+}
