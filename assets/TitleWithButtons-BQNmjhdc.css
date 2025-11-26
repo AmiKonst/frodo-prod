@@ -1,0 +1,47 @@
+@keyframes fade-up-53e1fe05 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-53e1fe05 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.title[data-v-53e1fe05] {
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.title[data-v-53e1fe05]::-webkit-scrollbar {
+  display: none;
+}
+.title .title-text[data-v-53e1fe05] {
+  font: var(--font-h6);
+  font-weight: bold;
+  color: var(--dark-500);
+  flex-shrink: 0;
+  margin-right: 12px;
+  white-space: normal;
+  max-width: 70%;
+}
+.title button[data-v-53e1fe05] {
+  flex-shrink: 0;
+}
