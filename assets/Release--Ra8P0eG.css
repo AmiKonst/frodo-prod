@@ -1,0 +1,35 @@
+@keyframes fade-up-accc3326 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-accc3326 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.title[data-v-accc3326] {
+  font: var(--font-h4);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+}
+.buttons[data-v-accc3326] {
+  min-height: 38px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
