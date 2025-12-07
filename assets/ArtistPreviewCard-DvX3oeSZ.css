@@ -1,0 +1,102 @@
+@keyframes fade-up-47835276 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-47835276 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.artist-preview-card[data-v-47835276] {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+.artist-preview-card img[data-v-47835276] {
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  filter: blur(6px) saturate(1.05) contrast(1.02);
+  animation: livelyBg-47835276 45s ease-in-out infinite;
+}
+@keyframes livelyBg-47835276 {
+0% {
+    transform: scale(1) translateX(0%) translateY(0%) rotate(0deg);
+}
+25% {
+    transform: scale(1.06) translateX(-3%) translateY(-2%) rotate(-0.3deg);
+}
+50% {
+    transform: scale(1.08) translateX(2%) translateY(-1%) rotate(0.2deg);
+}
+75% {
+    transform: scale(1.05) translateX(-1%) translateY(3%) rotate(-0.15deg);
+}
+100% {
+    transform: scale(1) translateX(0%) translateY(0%) rotate(0deg);
+}
+}
+.artist-preview-card[data-v-47835276]:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  pointer-events: none;
+  background: linear-gradient(170deg, var(--white-20) 0%, var(--white-500) 84%);
+}
+.artist-preview-card .box[data-v-47835276] {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 8px;
+  align-items: start;
+}
+.artist-preview-card .box p[data-v-47835276] {
+  margin: 0 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 108px;
+  font: var(--font-body-1);
+  color: var(--dark-500);
+  white-space: pre-wrap;
+}
+.artist-preview-card .box .title[data-v-47835276] {
+  font: var(--font-h6);
+  color: var(--dark-500);
+}
+.artist-preview-card .box button[data-v-47835276] {
+  margin-left: auto;
+}
+.direction-rtl .artist-preview-card .box button[data-v-47835276] {
+  margin-left: 0;
+  margin-right: auto;
+}
