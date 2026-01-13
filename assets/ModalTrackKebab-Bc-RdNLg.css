@@ -1,0 +1,202 @@
+@keyframes fade-up-39cc7125 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-39cc7125 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.title[data-v-39cc7125] {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column;
+  padding-top: 12px;
+}
+.title .img[data-v-39cc7125] {
+  width: 74px;
+  height: 74px;
+  border-radius: 12px;
+  animation: animate-1-39cc7125 0.8s ease-in-out forwards;
+  position: ease-in-out;
+}
+.title .img img[data-v-39cc7125],
+.title .img svg[data-v-39cc7125] {
+  z-index: 1;
+  position: relative;
+}
+.title .img[data-v-39cc7125]:before, .title .img[data-v-39cc7125]:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: var(--light-20);
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 50%;
+  display: block;
+  animation: animate-1-pseudo-39cc7125 0.8s ease-in-out forwards;
+}
+.title .img[data-v-39cc7125]:after {
+  background: var(--light-10);
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+}
+@keyframes animate-1-pseudo-39cc7125 {
+0% {
+    transform: translateX(-50%) translateY(-50%) scale(0.6);
+    opacity: 0;
+}
+40% {
+    transform: translateX(-50%) translateY(-50%) scale(1.1);
+    opacity: 1;
+}
+60% {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+80% {
+    transform: translateX(-50%) translateY(-50%) scale(1.05);
+}
+100% {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+}
+@keyframes animate-1-39cc7125 {
+0% {
+    transform: scale(0.6);
+    opacity: 0;
+}
+40% {
+    transform: scale(1.1);
+    opacity: 1;
+}
+60% {
+    transform: scale(0.9);
+}
+80% {
+    transform: scale(1.05);
+}
+100% {
+    transform: scale(1);
+}
+}
+.title .img img[data-v-39cc7125] {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.buttons[data-v-39cc7125] {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+ul.kebab-list[data-v-39cc7125] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+}
+ul.kebab-list li[data-v-39cc7125] {
+  min-height: 54px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+ul.kebab-list li.offset[data-v-39cc7125] {
+  padding: 0 16px;
+}
+ul.kebab-list li.clickable[data-v-39cc7125] {
+  position: relative;
+}
+ul.kebab-list li.clickable[data-v-39cc7125]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, var(--primary-10) 0%, var(--primary-20) 50%, var(--primary-10) 100%);
+  opacity: 0;
+}
+@media only screen and (orientation: portrait) {
+ul.kebab-list li.clickable[data-v-39cc7125]:hover:before {
+    animation: hightlight-fade-out-39cc7125 0.3s forwards;
+}
+}
+ul.kebab-list li.clickable[data-v-39cc7125]:active:before {
+  animation: hightlight-fade-in-39cc7125 0.6s forwards;
+}
+@keyframes hightlight-fade-in-39cc7125 {
+0% {
+    opacity: 0;
+    width: 0%;
+}
+100% {
+    opacity: 0.3;
+    width: 100%;
+}
+}
+@keyframes hightlight-fade-out-39cc7125 {
+0% {
+    opacity: 0.3;
+    width: 100%;
+}
+100% {
+    opacity: 0;
+    width: 0%;
+}
+}
+ul.kebab-list li.clickable > svg[data-v-39cc7125] {
+  width: 20px;
+  height: 20px;
+  fill: var(--dark-80);
+  stroke: var(--dark-80);
+}
+ul.kebab-list li.clickable > span[data-v-39cc7125] {
+  font: var(--font-body-1);
+  color: var(--dark-500);
+}
+ul.kebab-list li > div[data-v-39cc7125] {
+  flex: 1;
+}
+ul.kebab-list li.disabled[data-v-39cc7125] {
+  opacity: 0.6;
+  cursor: default;
+}
+ul.kebab-list li.disabled[data-v-39cc7125]:before {
+  display: none;
+}
+ul.kebab-list li .skeleton-wrapper[data-v-39cc7125] {
+  min-width: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  width: 34px;
+  height: 34px;
+  margin: -7px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+ul.kebab-list li .wave[data-v-39cc7125] {
+  height: 80px;
+}

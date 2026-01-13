@@ -1,0 +1,50 @@
+@keyframes fade-up-93f58932 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-93f58932 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.track-wave[data-v-93f58932] {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  touch-action: none;
+  display: block;
+  --wave-unplayed: var(--gray-20);
+  --wave-played: var(--primary-500);
+  --wave-hover: var(--primary-20);
+  --wave-bg: transparent;
+  --wave-gap: 2;
+  --wave-radius: 2;
+}
+.track-wave .wave-canvas[data-v-93f58932] {
+  width: 100%;
+  height: 100%;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  background: transparent;
+}
+.track-wave.is-readonly[data-v-93f58932] {
+  cursor: default;
+}
+.track-wave[data-v-93f58932]:not(.is-readonly) {
+  cursor: pointer;
+}
+.track-wave[data-v-93f58932]:focus {
+  outline: none;
+}
