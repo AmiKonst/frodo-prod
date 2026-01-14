@@ -1,0 +1,120 @@
+@keyframes fade-up-8ba228f9 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-8ba228f9 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.title[data-v-8ba228f9] {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  flex-direction: column;
+  padding-top: 12px;
+  width: calc(100vw - 40px);
+}
+.title .wave[data-v-8ba228f9] {
+  height: 24px;
+}
+ul.kebab-list[data-v-8ba228f9] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+}
+ul.kebab-list li[data-v-8ba228f9] {
+  min-height: 54px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+ul.kebab-list li.offset[data-v-8ba228f9] {
+  padding: 0 16px;
+}
+ul.kebab-list li.clickable[data-v-8ba228f9] {
+  position: relative;
+}
+ul.kebab-list li.clickable[data-v-8ba228f9]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, var(--primary-10) 0%, var(--primary-20) 50%, var(--primary-10) 100%);
+  opacity: 0;
+}
+@media only screen and (orientation: portrait) {
+ul.kebab-list li.clickable[data-v-8ba228f9]:hover:before {
+    animation: hightlight-fade-out-8ba228f9 0.3s forwards;
+}
+}
+ul.kebab-list li.clickable[data-v-8ba228f9]:active:before {
+  animation: hightlight-fade-in-8ba228f9 0.6s forwards;
+}
+@keyframes hightlight-fade-in-8ba228f9 {
+0% {
+    opacity: 0;
+    width: 0%;
+}
+100% {
+    opacity: 0.3;
+    width: 100%;
+}
+}
+@keyframes hightlight-fade-out-8ba228f9 {
+0% {
+    opacity: 0.3;
+    width: 100%;
+}
+100% {
+    opacity: 0;
+    width: 0%;
+}
+}
+ul.kebab-list li.clickable > svg[data-v-8ba228f9] {
+  width: 20px;
+  height: 20px;
+  fill: var(--dark-80);
+  stroke: var(--dark-80);
+}
+ul.kebab-list li.clickable > span[data-v-8ba228f9] {
+  font: var(--font-body-1);
+  color: var(--dark-500);
+}
+ul.kebab-list li > div[data-v-8ba228f9] {
+  flex: 1;
+}
+ul.kebab-list li.disabled[data-v-8ba228f9] {
+  opacity: 0.6;
+  cursor: default;
+}
+ul.kebab-list li.disabled[data-v-8ba228f9]:before {
+  display: none;
+}
+ul.kebab-list li p[data-v-8ba228f9] {
+  white-space: pre-line;
+  font: var(--font-body-1);
+  color: var(--dark-500);
+  margin: 0;
+}
