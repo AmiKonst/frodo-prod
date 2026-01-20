@@ -1,0 +1,243 @@
+@keyframes fade-up-cd8bd733 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-cd8bd733 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}@keyframes fade-up-db76b31a {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-db76b31a {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.release-preview[data-v-db76b31a] {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+.release-preview > div[data-v-db76b31a]:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+.release-preview > div:first-child .cover[data-v-db76b31a] {
+  width: 146px;
+  height: 146px;
+  position: relative;
+}
+.release-preview > div:first-child .cover .skeleton-wrapper[data-v-db76b31a],
+.release-preview > div:first-child .cover img[data-v-db76b31a] {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.release-preview > div:first-child .cover .buttons[data-v-db76b31a] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 8px;
+  height: auto;
+  justify-content: end;
+  align-items: center;
+  filter: drop-shadow(1px 2px 2px var(--dark-80));
+}
+.release-preview > div:first-child .cover .buttons .open[data-v-db76b31a] {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.release-preview > div:first-child .cover .buttons .audio-toggle[data-v-db76b31a] {
+  width: 34px;
+  height: 34px;
+  background: transparent;
+}
+.release-preview > div:first-child .cover:hover .buttons .open[data-v-db76b31a] {
+  opacity: 1;
+}
+.release-preview > div:first-child .cover:hover .buttons .audio-toggle[data-v-db76b31a] {
+  opacity: 1;
+}
+.release-preview > div:first-child .cover.disabled[data-v-db76b31a] {
+  filter: grayscale(1);
+}
+.release-preview > div:first-child .cover.disabled .skeleton-wrapper[data-v-db76b31a],
+.release-preview > div:first-child .cover.disabled img[data-v-db76b31a] {
+  cursor: default;
+}
+.release-preview > div:first-child .state[data-v-db76b31a] {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.release-preview > div[data-v-db76b31a]:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+.release-preview > div:nth-child(2) > div[data-v-db76b31a] {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 4px;
+  min-width: 0;
+}
+.release-preview > div:nth-child(2) > div[data-v-db76b31a]:first-child {
+  flex-wrap: nowrap;
+}
+.release-preview > div:nth-child(2) > div[data-v-db76b31a]:last-child {
+  flex-direction: column;
+  width: 100%;
+}
+.release-preview > div:nth-child(2) > div:last-child span[data-v-db76b31a] {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.release-preview > div:nth-child(2) > div .title[data-v-db76b31a] {
+  font: var(--font-body-1);
+  color: var(--dark-500);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.release-preview > div:nth-child(2) > div .title.full[data-v-db76b31a] {
+  flex-shrink: 0;
+}
+.release-preview > div:nth-child(2) > div .release-type[data-v-db76b31a],
+.release-preview > div:nth-child(2) > div .year[data-v-db76b31a] {
+  font: var(--font-caption);
+  color: var(--gray-500);
+}
+.release-preview > div:nth-child(2) > div .from[data-v-db76b31a] {
+  font: var(--font-body-2);
+  white-space: nowrap;
+  color: var(--gray-80);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.release-preview > div:nth-child(2) > div .state[data-v-db76b31a] {
+  margin-left: 4px;
+}
+.release-preview > div[data-v-db76b31a]:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.release-preview.disabled[data-v-db76b31a] {
+  opacity: 0.4;
+  filter: grayscale(1);
+  cursor: default;
+}
+.release-preview.row[data-v-db76b31a] {
+  flex-direction: row;
+}
+.release-preview.row > div:first-child .cover[data-v-db76b31a] {
+  width: 80px;
+  height: 80px;
+}
+.release-preview.row > div:first-child .cover .buttons[data-v-db76b31a] {
+  top: 0;
+  height: auto;
+  padding: 0;
+}
+.release-preview.row > div:first-child .cover .buttons .open[data-v-db76b31a] {
+  display: none;
+}
+.release-preview.row > div:first-child .cover .buttons .audio-toggle[data-v-db76b31a] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.release-preview.row > div:nth-child(2) > div[data-v-db76b31a]:last-child {
+  align-items: start;
+}
+.release-preview.row.light[data-v-db76b31a] {
+  align-items: center;
+}
+.release-preview.row.light > div:first-child .cover[data-v-db76b31a] {
+  width: 68px;
+  height: 68px;
+}
+.release-preview.row.light > div[data-v-db76b31a]:nth-child(2) {
+  gap: 4px;
+}
+.release-preview.row.light > div:nth-child(2) > div[data-v-db76b31a]:nth-child(3) {
+  display: none;
+}
+.release-preview.invert > div:nth-child(2) > div .title[data-v-db76b31a] {
+  color: var(--white-500);
+}
+.release-preview.skeleton > div:nth-child(2) > div[data-v-db76b31a] {
+  position: relative !important;
+  color: transparent !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, var(--gray-20) 25%, var(--white-500) 37%, var(--gray-20) 63%);
+  background-size: 400% 100%;
+  animation: loadingShimmer-db76b31a 4s ease infinite;
+  right: 0;
+  bottom: 0;
+}
+@keyframes loadingShimmer-db76b31a {
+0% {
+    background-position: 200% 0;
+}
+100% {
+    background-position: -200% 0;
+}
+}
+.release-preview.skeleton > div:nth-child(2) > div[data-v-db76b31a]:nth-child(1) {
+  max-width: 120px;
+}
+.release-preview.skeleton > div:nth-child(2) > div:nth-child(1) .title[data-v-db76b31a] {
+  opacity: 0;
+}
+.release-preview.skeleton > div:nth-child(2) > div[data-v-db76b31a]:nth-child(2) {
+  max-width: 60px;
+}
+.release-preview.skeleton > div:nth-child(2) > div:nth-child(2) button[data-v-db76b31a] {
+  opacity: 0;
+}
