@@ -1,0 +1,42 @@
+@keyframes fade-up-60b0e87c {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-60b0e87c {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.head[data-v-60b0e87c] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 0 2px 0 16px;
+  height: 50px;
+  flex-shrink: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+.head .title[data-v-60b0e87c] {
+  font: var(--font-body-1);
+  font-weight: bold;
+  color: var(--dark-500);
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.empty-label[data-v-60b0e87c] {
+  padding: 0 20px;
+}
