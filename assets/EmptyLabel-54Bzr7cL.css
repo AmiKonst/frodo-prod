@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@keyframes fade-up-de542295 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-de542295 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+div[data-v-de542295] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 12px;
+  /* Анимации */
+}
+div > video[data-v-de542295], div > svg[data-v-de542295] {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+  fill: var(--dark-80);
+  stroke: var(--dark-20);
+}
+div > span[data-v-de542295] {
+  font: var(--font-body-1);
+  font-weight: bold;
+  color: var(--dark-80);
+  text-align: center;
+}
+div > span.description[data-v-de542295] {
+  font: var(--font-body-2);
+  color: var(--gray-500);
+  text-align: center;
+  padding: 0 10px;
+}
+div.invert > span[data-v-de542295] {
+  color: var(--white-80);
+}
+div .anim-bounce[data-v-de542295] {
+  animation: bounce-de542295 2.4s infinite;
+}
+@keyframes bounce-de542295 {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.25);
+}
+100% {
+    transform: scale(1);
+}
+}
+div .anim-rotate[data-v-de542295] {
+  animation: rotate-de542295 1.6s infinite;
+}
+@keyframes rotate-de542295 {
+0% {
+    transform: rotate(0);
+}
+60% {
+    transform: rotate(20deg);
+}
+100% {
+    transform: rotate(0);
+}
+}
+div .anim-pulse[data-v-de542295] {
+  animation: pulse-de542295 2.8s infinite;
+}
+@keyframes pulse-de542295 {
+0% {
+    transform: scale(1);
+    opacity: 1;
+}
+50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+100% {
+    transform: scale(1);
+    opacity: 1;
+}
+}
+div .anim-pop[data-v-de542295] {
+  animation: pop-de542295 2s infinite;
+}
+@keyframes pop-de542295 {
+0% {
+    transform: scale(0.9);
+}
+70% {
+    transform: scale(1.3);
+}
+100% {
+    transform: scale(1);
+}
+}
+div .anim-wiggle[data-v-de542295] {
+  animation: wiggle-de542295 1s infinite;
+}
+@keyframes wiggle-de542295 {
+0% {
+    transform: rotate(0);
+}
+25% {
+    transform: rotate(-8deg);
+}
+50% {
+    transform: rotate(8deg);
+}
+75% {
+    transform: rotate(-4deg);
+}
+100% {
+    transform: rotate(0);
+}
+}
