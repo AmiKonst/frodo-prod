@@ -1,0 +1,23 @@
+@keyframes fade-up-033c8d27 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-033c8d27 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.block[data-v-033c8d27] {
+  flex: 1;
+}
