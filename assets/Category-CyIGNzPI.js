@@ -1,0 +1,56 @@
+import { D as Dictionary } from './Dictionary-C6bbzAah.js';
+import { _ as _sfc_main$1 } from './Ready-huZ7n5AL.js';
+import { g as api, s as stores, r as reactive, c as createElementBlock, b as createBlock, d as createCommentVNode, e as createVNode, F as Fragment, f as openBlock } from './index-Tfbpknhu.js';
+import './ItemDetail-BZUrZY5H.js';
+import './Tracks-DrSzBa4u.js';
+import './Block-7rB5YDKU.js';
+import './TitleWithButtons-BL3Vct56.js';
+import './EmptyLabel-Bt79qOD0.js';
+import './Donate-CBycZrIA.js';
+
+const _sfc_main = {
+  __name: 'Category',
+  props: {
+        code: { type: String }
+    },
+  setup(__props) {
+
+    const dict = api.dict();
+    stores.locale();
+
+
+    const props = __props;
+
+    const data = reactive({
+        ready: false,
+        type: null
+    });
+
+    const init = async () => {
+        const types = await dict.getTypes();
+
+        data.type = types.find(item => item.code === 'categories');
+        data.ready = true;
+    };
+
+return (_ctx, _cache) => {
+  return (openBlock(), createElementBlock(Fragment, null, [
+    (data.ready)
+      ? (openBlock(), createBlock(Dictionary, {
+          key: 0,
+          code: props.code,
+          type: data.type
+        }, null, 8, ["code", "type"]))
+      : createCommentVNode("", true),
+    createVNode(_sfc_main$1, {
+      page: "category",
+      init: init
+    })
+  ], 64))
+}
+}
+
+};
+
+export { _sfc_main as default };
+//# sourceMappingURL=Category-CyIGNzPI.js.map
