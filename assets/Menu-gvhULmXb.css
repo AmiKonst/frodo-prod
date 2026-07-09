@@ -1,0 +1,134 @@
+@keyframes fade-up-4b219446 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-4b219446 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+span[data-v-4b219446] {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-500) !important;
+  color: var(--white-500) !important;
+  font: var(--font-label) !important;
+  border-radius: 50%;
+}@keyframes fade-up-27d19797 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes fade-center-27d19797 {
+0% {
+    opacity: 0;
+    filter: blur(4px);
+}
+100% {
+    opacity: 1;
+    filter: blur(0);
+}
+}
+.menu[data-v-27d19797] {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li[data-v-27d19797] {
+  font: var(--font-h7);
+  color: var(--dark-80);
+  cursor: pointer;
+  padding: 8px 8px;
+  transition: all 0.4s;
+  position: relative;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+.menu li[data-v-27d19797]:after {
+  content: "";
+  height: 2px;
+  width: 16px;
+  background: transparent;
+  transition: background 0.4s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.menu li.total[data-v-27d19797]:after {
+  transform: translateX(calc(-50% - 10px));
+}
+.menu li[data-v-27d19797]:first-child {
+  padding-left: 0;
+}
+.menu li[data-v-27d19797]:first-child:after {
+  left: calc(50% - 4px);
+}
+.menu li[data-v-27d19797]:last-child {
+  padding-right: 0;
+}
+.menu li[data-v-27d19797]:last-child:after {
+  left: calc(50% + 4px);
+}
+.menu li[data-v-27d19797]:last-child:first-child:after {
+  left: 50%;
+}
+.menu li[data-v-27d19797]:hover {
+  color: var(--dark-80);
+}
+.menu li[data-v-27d19797]:hover:after {
+  background-color: var(--dark-20);
+}
+.menu li.active[data-v-27d19797] {
+  position: relative;
+  color: var(--dark-500);
+}
+.menu li.active[data-v-27d19797]:after {
+  background: var(--dark-500);
+}
+.menu.minimal li[data-v-27d19797]:after {
+  display: none;
+}
+.menu.invert li[data-v-27d19797] {
+  font: var(--font-body-1);
+  color: var(--white-80);
+}
+.menu.invert li[data-v-27d19797]:hover {
+  color: var(--white-80);
+}
+.menu.invert li[data-v-27d19797]:hover:after {
+  background-color: var(--white-20);
+}
+.menu.invert li.active[data-v-27d19797] {
+  position: relative;
+  color: var(--white-500);
+}
+.menu.invert li.active[data-v-27d19797]:after {
+  background: var(--white-500);
+}
